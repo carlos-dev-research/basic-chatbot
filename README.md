@@ -9,17 +9,20 @@ https://ollama.com/download
 2.- If you want to use nvidia gpu, necessary drivers must be installed
 https://www.nvidia.com/download/index.aspx
 
-3.- Pytorch installation is also necessary to run Speech to Text model
-https://pytorch.org/get-started/locally/
-
-4.- Conda or miniconda must be installed in the system
+3.- Conda or miniconda must be installed in the system
 https://docs.anaconda.com/free/miniconda/miniconda-install/
 
 ## Installation steps
 1.- Create a conda enviroment with python 3.8
-conda create -n <envName> python=3.8
+conda create -n <env_name> python=3.8
 
-2.- Activate enviroment and install dependencies 
+2.- Activate enviroment 
+conda activate <env_name>
+
+3.- Install pytorch to run the whisper model, go to the website and follow neccesary step according to your hardware
+https://pytorch.org/get-started/locally/
+
+4.- Install dependencies with the following commands
 python -m pip install -U pip
 pip install transformers
 pip install soundfile
