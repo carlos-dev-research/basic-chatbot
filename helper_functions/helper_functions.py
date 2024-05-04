@@ -13,6 +13,8 @@ def create_sessionId():
 
 # Get chat_history from session ID
 def get_chat_history(session_id):
+    if not os.path.exists('chat_history'):
+        os.mkdir('chat_history')
     with open(f'chat_history/{session_id}.txt','r') as f:
         chat_history = json.load(f)
     return chat_history

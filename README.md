@@ -1,5 +1,6 @@
 # INSTALLATION
-The Code was tested on Windows 10 with Nvidia T600 mobile gpu
+The Code was tested on Windows 10 with Nvidia T600 mobile gpu and 32gb of RAM
+If your system has less than 22 GB of RAM, please enable system disk memory pooling for optimal performance or comment whisper object
 
 ## Pre requirements
 1.- Ollama should be installed in the system
