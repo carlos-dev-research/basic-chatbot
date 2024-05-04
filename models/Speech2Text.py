@@ -6,7 +6,7 @@ class Speech2Text:
             self.pipe = pipeline("automatic-speech-recognition", model="openai/whisper-medium", device = 'cuda')
         except:
             print("No cuda found, falling back to cpu")
-            self.pipe = pipeline("automatic-speech-recognition", model="openai/whisper-medium", device = 'cuda')
+            self.pipe = pipeline("automatic-speech-recognition", model="openai/whisper-medium", device = 'cpu')
     
     def get_transcript(self,file_path):
         return self.pipe(file_path)['text']
