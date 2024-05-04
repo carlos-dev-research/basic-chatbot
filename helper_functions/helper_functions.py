@@ -8,6 +8,8 @@ def create_sessionId():
     session_id = str(uuid.uuid4())
     if not os.path.exists('chat_history'):
         os.mkdir('chat_history')
+    if not os.path.exists('uploaded_audios'):
+        os.mkdir('uploaded_audios')
     with open(f'chat_history/{session_id}.txt','w') as f:
         f.write('[]')
     return session_id
