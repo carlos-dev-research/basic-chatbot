@@ -33,7 +33,7 @@ conda install -c conda-forge ffmpeg
 
 ## Run the localhost
 1.- Clone repository and run main.py
-git clone https://github.com/carlosggl/basic-chatbot.git
+git clone https://github.com/carlos-dev-research/basic-chatbot.git
 cd clone <repository_main_folder>
 python main.py
 
